@@ -34,19 +34,22 @@
         li{
             position: relative;
             padding: 32px 23px 32px 23px;
+          
+            
+            
         }
-        li:hover{
-            color: #F15025;
-            background-color: #FEEEE9;
-        }
-        li:hover::before {
+    }
+}
+.active{
+    color: #F15025;
+    background-color: #FEEEE9;
+    li::before{
         content: " ";
-        background-color: #F15025;
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        top: 0px;
-        left: 0px;                
-        }
+                background-color: #F15025;
+                width: 100%;
+                height: 3px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
     }
 }

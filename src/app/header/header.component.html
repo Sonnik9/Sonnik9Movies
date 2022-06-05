@@ -11,10 +11,17 @@
   </div>
   <menu class="navigation">
     <ul>
-      <li>MOVIES</li>
-      <li>TV SHOWS</li>
-      <li>PEOPLE</li>
-      <li>LEADERBOARD</li>
+      <a
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ><li>MOVIES</li></a
+      >
+      <a routerLink="tvshows" routerLinkActive="active"><li>TV SHOWS</li></a>
+      <a routerLink="people" routerLinkActive="active"><li>PEOPLE</li></a>
+      <a routerLink="leaderboard" routerLinkActive="active"
+        ><li>LEADERBOARD</li></a
+      >
     </ul>
   </menu>
 </header>
