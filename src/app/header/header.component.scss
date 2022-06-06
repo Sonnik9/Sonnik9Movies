@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 .header-container {
     background-color: #FFFFFF;
     width: 100%;
@@ -45,11 +44,11 @@
     background-color: #FEEEE9;
     li::before{
         content: " ";
-                background-color: #F15025;
-                width: 100%;
-                height: 3px;
-                position: absolute;
-                top: 0px;
-                left: 0px;
+        background-color: #F15025;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
     }
 }
