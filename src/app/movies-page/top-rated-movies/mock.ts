@@ -1,7 +1,7 @@
 export const films = [
     {
-      name: 'The FirstGodfather',
-      raiting: 87,
+      name: 'The FiiiirstGodfather',
+      raiting: 89,
       img: 'https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg',
       old: 'mar 17 1948',
       janr: 'Drama, Crime',
@@ -11,7 +11,7 @@ export const films = [
     },
     {
       name: 'The twoGodfather',
-      raiting: 87,
+      raiting: 85,
       img: 'https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg',
       old: 'mar 17 1948',
       janr: 'Drama, Crime',
@@ -21,7 +21,7 @@ export const films = [
     },
     {
       name: 'The treeGodfather',
-      raiting: 87,
+      raiting: 84,
       img: 'https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg',
       old: 'mar 17 1948',
       janr: 'Drama, Crime',
@@ -31,7 +31,7 @@ export const films = [
     },
     {
       name: 'The fourGodfather',
-      raiting: 87,
+      raiting: 83,
       img: 'https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg',
       old: 'mar 17 1948',
       janr: 'Drama, Crime',
@@ -41,7 +41,7 @@ export const films = [
     },
     {
       name: 'The fiveGodfather',
-      raiting: 87,
+      raiting: 82,
       img: 'https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg',
       old: 'mar 17 1948',
       janr: 'Drama, Crime',
@@ -51,7 +51,7 @@ export const films = [
     },
     {
       name: 'The sixGodfather',
-      raiting: 87,
+      raiting: 81,
       img: 'https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg',
       old: 'mar 17 1948',
       janr: 'Drama, Crime',

@@ -32,7 +32,7 @@
                 </div>
                 
                 <span class="rating">
-                    87
+                    {{films[0].raiting}}
                 </span>    
 
                 <div class="action-btn">
@@ -54,7 +54,7 @@
             <div class="wrap-small container-small">
 
                 <div class="poster-small">
-                    <img src="https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg" alt="img">
+                    <img src="{{item.img}}" alt="img">
                 </div>
                 
 
@@ -66,7 +66,7 @@
                             <span class="dots"></span>
                             <span>{{item.janr}}</span>
                             <span class="dots"></span>
-                            <span>2h 55m</span>
+                            <span>{{item.duration}}</span>
                     </div>
 
                     <div class="action-btn-small">
@@ -77,7 +77,7 @@
                 </section>
 
                 <span class="rating-small">
-                    85
+                    {{item.raiting}}
                 </span>
         
             </div>
