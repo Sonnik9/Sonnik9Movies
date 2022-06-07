@@ -6,7 +6,7 @@
      
         <div class="most-rated-movie container">
             <div class="poster-big">
-                <img src="https://festagent.com/system/tilda/tild3562-6362-4762-b036-653363663832__a01ccf32943f670ef632.jpg" alt="img">
+                <img src="{{films[0].img}}" alt="img">
             </div>
             
              <div class="about-film">
@@ -15,19 +15,19 @@
 
                         <span class="offer">An offer you can't refuse</span>
                     
-                        <h4 class="movies-name">The Godfater</h4>
+                        <h4 class="movies-name">{{films[0].name}}</h4>
                     
                         <div class="dicription-short">
-                            <span>mar17. 1948</span>
+                            <span>{{films[0].old}}</span>
                             <span class="dots"></span>
-                            <span>Drama, Crime</span>
+                            <span>{{films[0].janr}}</span>
                             <span class="dots"></span>
-                            <span>2h 55m</span>
+                            <span>{{films[0].duration}}</span>
                         </div>
                     
                         <span class="overview">Overview</span>
                     
-                        <p class="discription-big">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</p>
+                        <p class="discription-big">{{films[0].discription}}</p>
                                         
                 </div>
                 
@@ -49,7 +49,7 @@
 
     <div class="raiting-roll">
         
-        <div class="raiting-movie">
+        <div *ngFor="let item of films | slice:1;" class="raiting-movie">
             
             <div class="wrap-small container-small">
 
@@ -59,12 +59,12 @@
                 
 
                 <section>
-                    <h4 class="movie-name-small">The Godfather</h4>
+                    <h4 class="movie-name-small">{{item.name}}</h4>
 
                     <div class="dicription-short-small">
-                            <span>mar17. 1948</span>
+                            <span>{{item.old}}</span>
                             <span class="dots"></span>
-                            <span>Drama, Crime</span>
+                            <span>{{item.janr}}</span>
                             <span class="dots"></span>
                             <span>2h 55m</span>
                     </div>

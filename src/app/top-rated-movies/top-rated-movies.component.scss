@@ -137,6 +137,7 @@
         margin-right: 72px;
         background-color: transparent;
         color: white;
+        cursor: pointer;
       }
     }
   }
@@ -191,7 +192,7 @@
       position: relative;
     }
     .raiting-movie{
-      height: 180px;
+      // height: 180px;
         img {
         width: 90px;
         height: 140px;
@@ -246,6 +247,7 @@
             margin-right: 72px;
             background-color: transparent;
             color: white;
+            cursor: pointer;
           }
         }  
         .rating-small{
@@ -266,96 +268,6 @@
         }         
     }
 }
-// .raiting-roll {
-//   background-color: rgb(19, 19, 19, 0.9);
-//     .raiting-movie {
-//         width: 1440px;
-//         height: 180px;
-//         position: relative;
-//         
-//         .movie-name-small {
-//         position: absolute;
-//         width: 200px;
-//         left: 210px;
-//         top: 46px;
-//         margin: 0px;
-
-//         font-family: "Raleway";
-//         font-style: normal;
-//         font-weight: 700;
-//         font-size: 24px;
-//         line-height: 28px;
-//         letter-spacing: 2px;
-
-//         color: #ffffff;
-//         }
-//         .dicription-short-small {
-//         display: inline-block;
-//         position: absolute;
-//         left: 210px;
-//         top: 82px;
-//             span {
-//                 margin-right: 44px;
-//             }
-
-//         font-family: "Open Sans";
-//         font-style: normal;
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 19px;
-//         /* identical to box height */
-
-//         color: rgba(255, 255, 255, 0.73);
-
-//             .dots {
-//                 position: absolute;
-//                 width: 8px;
-//                 height: 8px;
-//                 transform: translate(-300%, 75%);
-
-//                 background: #f15025;
-//                 border-radius: 6px;
-//             }
-//         }
-//         .action-btn-small {
-//         position: absolute;
-//         display: block;
-//         top: 112px;
-//         left: 242px;
-//         width: 500px;
-
-//         font-family: "Open Sans";
-//         font-style: normal;
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 19px;
-
-//             button {
-//             margin-right: 72px;
-//             background-color: rgb(19, 19, 19, 0.9);
-//             color: white;
-//             }
-//         }
-//         .rating-small{
-//         position: absolute;
-//         width: 114px;
-//         height: 180px;
-//         left: 1166px;
-//         top: 0px;
-
-//         font-family: 'Raleway';
-//         font-style: normal;
-//         font-weight: 700;
-//         font-size: 96px;
-//         line-height: 180px;
-//         /* identical to box height, or 188% */
-
-//         letter-spacing: 2px;
-
-//         color: #F15025;
-//         }
-//     }
-// }
 
 .load-more{
   text-transform: uppercase;
@@ -363,6 +275,7 @@
   align-items: center;
   height: 60px;
   background: #F15025;
+  cursor: pointer;
 
   font-family: 'Open Sans';
 font-style: normal;
