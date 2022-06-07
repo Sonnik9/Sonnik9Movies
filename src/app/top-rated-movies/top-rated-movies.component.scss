@@ -1,7 +1,13 @@
 .top-rated-movies {
-  background-color: #191919;
-  width: 1440px;
+  
+  // max-width: 1440px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.most-rated{
+  background-color: #191919;
 }
 
 .container {
@@ -18,153 +24,130 @@
   padding-bottom: 20px;
 }
 
-.most-rated {
-  position: relative;
-  height: 580px;
-}
-.most-rated-movie{
-    width: 1440px;
-    height: 580px;
-}
-.poster-big {
-  position: absolute;
-  img {
-    width: 330px;
-    height: 500px;
-  }
-}
-.about-film {
-  position: relative;
-  .offer {
-    position: absolute;
-    width: 263px;
-    height: 33px;
-    left: 474px;
-    top: 32px;
-
-    font-family: "Open Sans";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    /* identical to box height */
-
-    color: rgba(255, 255, 255, 0.73);
-  }
-  .movies-name {
-    position: absolute;
-    width: 358px;
-    height: 56px;
-    left: 475px;
-    top: 30px;
-
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: 2px;
-
-    color: #ffffff;
-  }
-  .dicription-short {
-    display: inline-block;
-    position: absolute;
-    left: 474px;
-    top: 161px;
-    span {
-      margin-right: 44px;
+.most-rated-movie {
+  display: flex;
+  .poster-big {
+    flex-basis: 25%;
+    img {
+      width: 330px;
+      height: 500px;
     }
+  }
+  .about-film {
+    flex-basis: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+    padding-top: 32px;
+    .allDiscription {
+      margin-right: 235px;
+      display: flex;
+      flex-direction: column;
+      .offer {
+        font-family: "Open Sans";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: rgba(255, 255, 255, 0.73);
+      }
+      .movies-name {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 2px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        color: #ffffff;
+      }
+      .dicription-short {
+        display: inline-block;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
 
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height */
+        color: rgba(255, 255, 255, 0.73);
+        span {
+          margin-right: 44px;
+        }
+        .dots {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          transform: translate(-225%, 50%);
 
-    color: rgba(255, 255, 255, 0.73);
-
-    .dots {
+          background: #f15025;
+          border-radius: 6px;
+        }
+      }
+      .overview {
+        margin-top: 32px;
+        display: inline;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      .discription-big {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: rgba(255, 255, 255, 0.73);
+      }
+    }
+    .rating {
       position: absolute;
-      width: 12px;
-      height: 12px;
-      transform: translate(-225%, 50%);
+      width: 170px;
+      height: 169px;
+      right: 0px;
 
-      background: #f15025;
-      border-radius: 6px;
+      font-family: "Raleway";
+      font-style: bold;
+      font-weight: 700;
+      font-size: 144px;
+      line-height: 169px;
+
+      letter-spacing: 2px;
+
+      color: #f15025;
     }
-  }
-  .overview {
-    position: absolute;
-    width: 86px;
-    height: 25px;
-    left: 474px;
-    top: 218px;
+    .action-btn {
+      position: relative;
+      margin-top: auto;
+      display: flex;
+      justify-content: end;
+      margin-right: 4%;
 
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height */
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
 
-    color: #ffffff;
-  }
-  .discription-big {
-    position: absolute;
-    width: 651px;
-    height: 96px;
-    left: 475px;
-    top: 259px;
-
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
-
-    color: rgba(255, 255, 255, 0.73);
-  }
-
-  .action-btn {
-    position: absolute;
-    display: block;
-    top: 447px;
-    left: 787px;
-    width: 500px;
-
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-
-    button {
-      margin-right: 72px;
-      background-color: #191919;
-      color: white;
+      button {
+        margin-right: 72px;
+        background-color: transparent;
+        color: white;
+      }
     }
   }
 }
 
-.rating{
-  position: absolute;
-  width: 170px;
-  height: 169px;
-  right: 0%;
-  transform: translateX(-100%);
+.raiting-movie:nth-child(odd){
+  background-color: #303030
+}
 
-  font-family: "Raleway";
-  font-style: bold;
-  font-weight: 700;
-  font-size: 144px;
-  line-height: 169px;
-
-  letter-spacing: 2px;
-
-  color: #f15025;
+.raiting-movie:nth-child(even){
+  background-color: #191919;
 }
 
 .play-trailer::before{
@@ -200,49 +183,41 @@
   top: -1px;
 }
 
-
-.raiting-roll {
-  background-color: rgb(19, 19, 19, 0.9);
-    .raiting-movie {
-        width: 1440px;
-        height: 180px;
-        position: relative;
+.raiting-roll{
+  display: flex;
+  flex-direction: column;
+    .wrap-small{
+      display: flex;
+      position: relative;
+    }
+    .raiting-movie{
+      height: 180px;
         img {
         width: 90px;
         height: 140px;
+        margin-right: 40px;
         }
         .movie-name-small {
-        position: absolute;
-        width: 200px;
-        left: 210px;
-        top: 46px;
-        margin: 0px;
-
         font-family: "Raleway";
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 2px;
+        margin-bottom: 8px;
 
         color: #ffffff;
         }
         .dicription-short-small {
-        display: inline-block;
-        position: absolute;
-        left: 210px;
-        top: 82px;
-            span {
+              span {
                 margin-right: 44px;
-            }
-
+              }
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        /* identical to box height */
-
+        
         color: rgba(255, 255, 255, 0.73);
 
             .dots {
@@ -256,11 +231,10 @@
             }
         }
         .action-btn-small {
-        position: absolute;
-        display: block;
-        top: 112px;
-        left: 242px;
-        width: 500px;
+        position: relative;
+        margin-top: 10px;
+        display: flex;
+        margin-left: 19px;
 
         font-family: "Open Sans";
         font-style: normal;
@@ -268,18 +242,16 @@
         font-size: 14px;
         line-height: 19px;
 
-            button {
+          button {
             margin-right: 72px;
-            background-color: rgb(19, 19, 19, 0.9);
+            background-color: transparent;
             color: white;
-            }
-        }
+          }
+        }  
         .rating-small{
-        position: absolute;
-        width: 114px;
-        height: 180px;
-        left: 1166px;
-        top: 0px;
+          position: absolute;
+          height: 169px;
+          right: 0px;
 
         font-family: 'Raleway';
         font-style: normal;
@@ -291,13 +263,104 @@
         letter-spacing: 2px;
 
         color: #F15025;
-        }
+        }         
     }
 }
+// .raiting-roll {
+//   background-color: rgb(19, 19, 19, 0.9);
+//     .raiting-movie {
+//         width: 1440px;
+//         height: 180px;
+//         position: relative;
+//         
+//         .movie-name-small {
+//         position: absolute;
+//         width: 200px;
+//         left: 210px;
+//         top: 46px;
+//         margin: 0px;
+
+//         font-family: "Raleway";
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 24px;
+//         line-height: 28px;
+//         letter-spacing: 2px;
+
+//         color: #ffffff;
+//         }
+//         .dicription-short-small {
+//         display: inline-block;
+//         position: absolute;
+//         left: 210px;
+//         top: 82px;
+//             span {
+//                 margin-right: 44px;
+//             }
+
+//         font-family: "Open Sans";
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 19px;
+//         /* identical to box height */
+
+//         color: rgba(255, 255, 255, 0.73);
+
+//             .dots {
+//                 position: absolute;
+//                 width: 8px;
+//                 height: 8px;
+//                 transform: translate(-300%, 75%);
+
+//                 background: #f15025;
+//                 border-radius: 6px;
+//             }
+//         }
+//         .action-btn-small {
+//         position: absolute;
+//         display: block;
+//         top: 112px;
+//         left: 242px;
+//         width: 500px;
+
+//         font-family: "Open Sans";
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 19px;
+
+//             button {
+//             margin-right: 72px;
+//             background-color: rgb(19, 19, 19, 0.9);
+//             color: white;
+//             }
+//         }
+//         .rating-small{
+//         position: absolute;
+//         width: 114px;
+//         height: 180px;
+//         left: 1166px;
+//         top: 0px;
+
+//         font-family: 'Raleway';
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 96px;
+//         line-height: 180px;
+//         /* identical to box height, or 188% */
+
+//         letter-spacing: 2px;
+
+//         color: #F15025;
+//         }
+//     }
+// }
 
 .load-more{
   text-transform: uppercase;
-  width: 1440px;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   background: #F15025;
 
@@ -309,5 +372,4 @@ line-height: 25px;
 letter-spacing: 1px;
 
 color: #FFFFFF;
-
 }
