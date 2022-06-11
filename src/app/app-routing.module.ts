@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { MoviesPageComponent } from './movies-page/movies-page.component';
 import { PeopleComponent } from './people/people.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { TvShowsComponent } from './tv-shows/tv-shows.component';
+
 const routes: Routes = [
   { path: 'movies', component: MoviesPageComponent },
   { path: 'people', component: PeopleComponent },
