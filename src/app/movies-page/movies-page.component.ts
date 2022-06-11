@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesPageComponent implements OnInit {
 
-  constructor() { }
+  films: any;
+
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+
   }
 
 }
