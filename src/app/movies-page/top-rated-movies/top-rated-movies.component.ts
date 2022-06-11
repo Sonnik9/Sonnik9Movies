@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { films } from './mock';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-top-rated-movies',
@@ -7,10 +7,15 @@ import { films } from './mock';
   styleUrls: ['./top-rated-movies.component.scss'],
 })
 export class TopRatedMoviesComponent implements OnInit {
+  films: any;
+  mostRatedFilm: any;
 
-films = films  
+  constructor(private moviesService: MoviesService) {}
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.moviesService.getTopRatedMovies().subscribe((data) => {
+      this.mostRatedFilm = data[0];
+      this.films = data.slice(1);
+    });
+  }
 }
