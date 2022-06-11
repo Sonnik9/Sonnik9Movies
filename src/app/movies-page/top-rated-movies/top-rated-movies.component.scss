@@ -1,12 +1,10 @@
 .top-rated-movies {
-  
-  // max-width: 1440px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-.most-rated{
+.most-rated {
   background-color: #191919;
 }
 
@@ -45,16 +43,13 @@
       display: flex;
       flex-direction: column;
       .offer {
-        font-family: "Open Sans";
         font-style: italic;
-        font-weight: 400;
         font-size: 24px;
         line-height: 33px;
         color: rgba(255, 255, 255, 0.73);
       }
       .movies-name {
         font-family: "Raleway";
-        font-style: normal;
         font-weight: 700;
         font-size: 48px;
         line-height: 56px;
@@ -65,9 +60,6 @@
       }
       .dicription-short {
         display: inline-block;
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
         font-size: 18px;
         line-height: 25px;
 
@@ -88,17 +80,12 @@
       .overview {
         margin-top: 32px;
         display: inline;
-        font-family: "Open Sans";
-        font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
         color: #ffffff;
       }
       .discription-big {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: rgba(255, 255, 255, 0.73);
@@ -110,7 +97,6 @@
       height: 169px;
       right: 0px;
       top: 0px;
-
 
       font-family: "Raleway";
       font-style: bold;
@@ -129,31 +115,28 @@
       justify-content: end;
       margin-right: 4%;
 
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: 400;
       font-size: 14px;
       line-height: 19px;
 
       button {
         margin-right: 72px;
         background-color: transparent;
-        color: white;
+        color: rgba(255, 255, 255, 0.73);
         cursor: pointer;
       }
     }
   }
 }
 
-.raiting-movie:nth-child(odd){
-  background-color: #303030
+.raiting-movie:nth-child(odd) {
+  background-color: #303030;
 }
 
-.raiting-movie:nth-child(even){
+.raiting-movie:nth-child(even) {
   background-color: #191919;
 }
 
-.play-trailer::before{
+.play-trailer::before {
   content: "";
   background: url(/assets/play-img.png) no-repeat;
   position: absolute;
@@ -163,7 +146,7 @@
   display: block;
   margin-left: -24px;
 }
-.about-movie::before{
+.about-movie::before {
   content: "";
   background: url(/assets/about-img.png) no-repeat;
   position: absolute;
@@ -174,7 +157,7 @@
   margin-left: -30px;
   top: -1px;
 }
-.watch-later::before{
+.watch-later::before {
   content: "";
   background: url(/assets/watch-later-img.png) no-repeat;
   position: absolute;
@@ -186,106 +169,86 @@
   top: -1px;
 }
 
-.raiting-roll{
+.raiting-roll {
   display: flex;
   flex-direction: column;
-    .wrap-small{
-      display: flex;
+  .wrap-small {
+    display: flex;
+    position: relative;
+  }
+  .raiting-movie {
+    img {
+      width: 90px;
+      height: 140px;
+      margin-right: 40px;
+    }
+    .movie-name-small {
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+
+      color: #ffffff;
+    }
+    .dicription-short-small {
+      span {
+        margin-right: 44px;
+      }
+
+      color: rgba(255, 255, 255, 0.73);
+      .dots {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        transform: translate(-300%, 75%);
+
+        background: #f15025;
+        border-radius: 6px;
+      }
+    }
+    .action-btn-small {
       position: relative;
-    }
-    .raiting-movie{
-      // height: 180px;
-        img {
-        width: 90px;
-        height: 140px;
-        margin-right: 40px;
-        }
-        .movie-name-small {
-        font-family: "Raleway";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 2px;
-        margin-bottom: 8px;
-
-        color: #ffffff;
-        }
-        .dicription-short-small {
-              span {
-                margin-right: 44px;
-              }
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        
+      margin-top: 10px;
+      display: flex;
+      margin-left: 19px;
+      button {
+        margin-right: 72px;
+        background-color: transparent;
         color: rgba(255, 255, 255, 0.73);
-
-            .dots {
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                transform: translate(-300%, 75%);
-
-                background: #f15025;
-                border-radius: 6px;
-            }
-        }
-        .action-btn-small {
-        position: relative;
-        margin-top: 10px;
-        display: flex;
-        margin-left: 19px;
-
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-
-          button {
-            margin-right: 72px;
-            background-color: transparent;
-            color: white;
-            cursor: pointer;
-          }
-        }  
-        .rating-small{
-          position: absolute;
-          height: 169px;
-          right: 0px;
-          top: 0px;
-
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 180px;
-        /* identical to box height, or 188% */
-
-        letter-spacing: 2px;
-
-        color: #F15025;
-        }         
+        cursor: pointer;
+      }
     }
+    .rating-small {
+      position: absolute;
+      height: 169px;
+      right: 0px;
+      top: 0px;
+
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 180px;
+      letter-spacing: 2px;
+
+      color: #f15025;
+    }
+  }
 }
 
-.load-more{
+.load-more {
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
   height: 60px;
-  background: #F15025;
+  background: #f15025;
   cursor: pointer;
 
-  font-family: 'Open Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
-letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
