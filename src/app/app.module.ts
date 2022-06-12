@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-
-import { AuthInterceptor } from './interceptor/auth.interceptor';
 
 import { AppComponent } from './app.component';
 import { MoviesPageComponent } from './movies-page/movies-page.component';
+import { TopRatedMoviesComponent } from './movies-page/top-rated-movies/top-rated-movies.component';
 import { HeaderComponent } from './header/header.component';
 import { TvShowsComponent } from './tv-shows/tv-shows.component';
 import { PeopleComponent } from './people/people.component';
@@ -16,23 +15,14 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
   declarations: [
     AppComponent,
     MoviesPageComponent,
+    TopRatedMoviesComponent,
     HeaderComponent,
     TvShowsComponent,
     PeopleComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-  ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
-      multi: true
-    },
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
