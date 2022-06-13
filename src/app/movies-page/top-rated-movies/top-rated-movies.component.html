@@ -4,30 +4,30 @@
   <div class="most-rated">
     <div class="most-rated-movie container">
       <div class="poster-big">
-        <img src="{{ mostRatedFilm.img }}" alt="img" />
+        <img src="{{ mostRatedFilm.poster_path }}" alt="img" />
       </div>
 
       <div class="about-film">
         <div class="allDiscription">
           <span class="offer">An offer you can't refuse</span>
 
-          <h4 class="movies-name">{{ mostRatedFilm.name }}</h4>
+          <h4 class="movies-name">{{ mostRatedFilm.original_title}}</h4>
 
           <div class="dicription-short">
-            <span>{{ mostRatedFilm.old }}</span>
+            <span>{{ mostRatedFilm.release_date}}</span>
             <span class="dots"></span>
-            <span>{{ mostRatedFilm.janr }}</span>
+            <span>{{ mostRatedFilm.genre }}</span>
             <span class="dots"></span>
             <span>{{ mostRatedFilm.duration }}</span>
           </div>
 
           <span class="overview">Overview</span>
 
-          <p class="discription-big">{{ mostRatedFilm.discription }}</p>
+          <p class="discription-big">{{ mostRatedFilm.overview }}</p>
         </div>
 
         <span class="rating">
-          {{ mostRatedFilm.raiting }}
+          {{ mostRatedFilm.popularity }}
         </span>
 
         <div class="action-btn">
@@ -43,16 +43,16 @@
     <div *ngFor="let item of films" class="raiting-movie">
       <div class="wrap-small container-small">
         <div class="poster-small">
-          <img src="{{ item.img }}" alt="img" />
+          <img src="{{ item.poster_path }}" alt="img" />
         </div>
 
         <section>
-          <h4 class="movie-name-small">{{ item.name }}</h4>
+          <h4 class="movie-name-small">{{ item.original_title }}</h4>
 
           <div class="dicription-short-small">
-            <span>{{ item.old }}</span>
+            <span>{{ item.release_date }}</span>
             <span class="dots"></span>
-            <span>{{ item.janr }}</span>
+            <span>{{ item.genre }}</span>
             <span class="dots"></span>
             <span>{{ item.duration }}</span>
           </div>
@@ -65,7 +65,7 @@
         </section>
 
         <span class="rating-small">
-          {{ item.raiting }}
+          {{ item.popularity }}
         </span>
       </div>
     </div>
