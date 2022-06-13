@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { MoviesPageComponent } from './movies-page/movies-page.component';
+import { TopRatedMoviesComponent } from './movies-page/top-rated-movies/top-rated-movies.component';
 import { HeaderComponent } from './header/header.component';
 import { TvShowsComponent } from './tv-shows/tv-shows.component';
 import { PeopleComponent } from './people/people.component';
@@ -14,17 +15,14 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
   declarations: [
     AppComponent,
     MoviesPageComponent,
+    TopRatedMoviesComponent,
     HeaderComponent,
     TvShowsComponent,
     PeopleComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
