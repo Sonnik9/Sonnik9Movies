@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/v4-shims.scss';
 @import "styles/reset";
-@import 'styles/common';
 @import 'styles/variables';
+@import 'styles/common';
 
 
