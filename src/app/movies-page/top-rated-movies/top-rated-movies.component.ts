@@ -13,10 +13,9 @@ export class TopRatedMoviesComponent implements OnInit {
   constructor(private moviesService: MoviesService) {}
 
   ngOnInit(): void {
-    this.moviesService.getTopRatedMovies()
-      .subscribe((data) => {
-        this.mostRatedFilm = data[0];
-        this.films = data.slice(1);
-      });
+    this.moviesService.getTopRatedMovies().subscribe((data) => {
+      this.mostRatedFilm = data.results[0];
+      this.films = data.results.slice(1);
+    });
   }
 }
