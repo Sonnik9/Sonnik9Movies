@@ -1,27 +1,29 @@
-<header class="header-container">
-  <div class="header-action">
-    <div>
-      <img src="assets/header/login.svg" alt="#" />
-      <div>LOG IN</div>
+<div class="global-container">
+  <header class="header-container">
+    <div class="header-action">
+      <div>
+        <img src="assets/header/login.svg" alt="#" />
+        <div>LOG IN</div>
+      </div>
+      <div>
+        <img src="assets/header/search.svg" alt="#" />
+        <div>SEARCH</div>
+      </div>
     </div>
-    <div>
-      <img src="assets/header/search.svg" alt="#" />
-      <div>SEARCH</div>
-    </div>
-  </div>
-  <menu class="navigation">
-    <ul>
-      <a
-        routerLink="movies"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        ><li>MOVIES</li></a
-      >
-      <a routerLink="tvshows" routerLinkActive="active"><li>TV SHOWS</li></a>
-      <a routerLink="people" routerLinkActive="active"><li>PEOPLE</li></a>
-      <a routerLink="leaderboard" routerLinkActive="active"
-        ><li>LEADERBOARD</li></a
-      >
-    </ul>
-  </menu>
-</header>
+    <menu class="navigation">
+      <ul>
+        <a
+          routerLink="movies"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ><li>MOVIES</li></a
+        >
+        <a routerLink="tvshows" routerLinkActive="active"><li>TV SHOWS</li></a>
+        <a routerLink="people" routerLinkActive="active"><li>PEOPLE</li></a>
+        <a routerLink="leaderboard" routerLinkActive="active"
+          ><li>LEADERBOARD</li></a
+        >
+      </ul>
+    </menu>
+  </header>
+</div>

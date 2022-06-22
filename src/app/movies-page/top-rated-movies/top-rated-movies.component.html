@@ -1,0 +1,75 @@
+<h3>top rated movies</h3>
+
+<div class="top-rated-movies">
+  <div class="most-rated">
+    <div class="most-rated-movie container">
+      <div class="poster-big">
+        <img src="{{ mostRatedFilm.poster_path }}" alt="img" />
+      </div>
+
+      <div class="about-film">
+        <div class="allDiscription">
+          <span class="offer">An offer you can't refuse</span>
+
+          <h4 class="movies-name">{{ mostRatedFilm.original_title}}</h4>
+
+          <div class="dicription-short">
+            <span>{{ mostRatedFilm.release_date}}</span>
+            <span class="dots"></span>
+            <span>{{ mostRatedFilm.genre }}</span>
+            <span class="dots"></span>
+            <span>{{ mostRatedFilm.duration }}</span>
+          </div>
+
+          <span class="overview">Overview</span>
+
+          <p class="discription-big">{{ mostRatedFilm.overview }}</p>
+        </div>
+
+        <span class="rating">
+          {{ mostRatedFilm.popularity }}
+        </span>
+
+        <div class="action-btn">
+          <button class="play-trailer">Play trailer</button>
+          <button class="about-movie">About this movie</button>
+          <button class="watch-later">Watch later</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="raiting-roll">
+    <div *ngFor="let item of films" class="raiting-movie">
+      <div class="wrap-small container-small">
+        <div class="poster-small">
+          <img src="{{ item.poster_path }}" alt="img" />
+        </div>
+
+        <section>
+          <h4 class="movie-name-small">{{ item.original_title }}</h4>
+
+          <div class="dicription-short-small">
+            <span>{{ item.release_date }}</span>
+            <span class="dots"></span>
+            <span>{{ item.genre }}</span>
+            <span class="dots"></span>
+            <span>{{ item.duration }}</span>
+          </div>
+
+          <div class="action-btn-small">
+            <button class="play-trailer">Play trailer</button>
+            <button class="about-movie">About this movie</button>
+            <button class="watch-later">Watch later</button>
+          </div>
+        </section>
+
+        <span class="rating-small">
+          {{ item.popularity }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <button class="load-more">load more</button>
+</div>
