@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-coming-soon',
@@ -7,17 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coming-soon.component.scss']
 })
 export class ComingSoonComponent implements OnInit {
-  postersComingSoon = [
-    '/assets/img.ComingSoon/Rectangle\ 15.png',
-    '/assets/img.ComingSoon/Rectangle\ 16.png',
-    '/assets/img.ComingSoon/Rectangle\ 17.png',
-    '/assets/img.ComingSoon/Rectangle\ 18.png',
-    '/assets/img.ComingSoon/Rectangle\ 19.png',
-];
+  postersComingSoon: any;
 
-  constructor() { }
+  constructor(
+    private moviesService: MoviesService,
+  ) 
+  {}
 
   ngOnInit(): void {
+    this.moviesService.getComingSoon()
+    .subscribe((data) => {
+      this.postersComingSoon = data;
+    })
   }
 
 }

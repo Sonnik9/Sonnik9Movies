@@ -10,6 +10,7 @@ import {
 } from '../models/movies';
 import { HttpService } from './http-services';
 import { topRated } from './movies.mock';
+import { postersComingSoon } from  './coming.mock';
 
 @Injectable({
   providedIn: 'root',
@@ -17,6 +18,10 @@ import { topRated } from './movies.mock';
 export class MoviesService extends HttpService {
   constructor(private http: HttpClient) {
     super();
+  }
+
+  getComingSoon(): Observable<any> {
+    return of(postersComingSoon);
   }
 
   getTopRatedMovies(): Observable<MovieListResponse> {
