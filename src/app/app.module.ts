@@ -10,6 +10,7 @@ import { TvShowsComponent } from './tv-shows/tv-shows.component';
 import { PeopleComponent } from './people/people.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { ComingSoonComponent } from './movies-page/coming-soon/coming-soon.component';
+import { TrendingComponent } from './movies-page/trending/trending.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ComingSoonComponent } from './movies-page/coming-soon/coming-soon.compo
     PeopleComponent,
     LeaderboardComponent,
     ComingSoonComponent,
+    TrendingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
