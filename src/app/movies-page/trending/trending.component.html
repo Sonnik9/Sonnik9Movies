@@ -1,0 +1,16 @@
+<div class="cont">
+    <div class="titel">Trending</div>
+    <div class="tabs-trending">        
+        <p class="first-p"> <span>Today</span></p>
+        <p>This week</p>
+        <p>Over all</p>        
+    </div>
+    <div class="posters-box">
+        <ul>
+            <li *ngFor="let item of postersTrending">
+                <img [src]="item" alt="">                
+           </li>           
+        </ul>
+    </div>
+</div>
+
