@@ -1,10 +1,11 @@
 <div class="global-container">
   <header class="header-container">
     <div class="header-action">
-      <div>
+      <div *ngIf="false">
         <img src="assets/header/login.svg" alt="#" />
         <div>LOG IN</div>
       </div>
+      <app-avatar-header [user] = "user"></app-avatar-header>
       <div>
         <img src="assets/header/search.svg" alt="#" />
         <div>SEARCH</div>

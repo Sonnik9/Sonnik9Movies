@@ -1,0 +1,24 @@
+.circle {
+    border-radius   : 50%;
+    width           : 50px;
+    height          : 50px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    margin-right: 15px;
+    
+
+    img{
+        border-radius: 50%;
+        width        : 50px;
+        height       : 50px;
+    }
+
+    .initials {
+        color         : #FFFFFF;
+        font-size     : 20px;
+        line-height   : 19px;
+        letter-spacing: 0.2625px;
+        font-weight: 700;
+    }
+}

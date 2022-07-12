@@ -11,6 +11,7 @@ import { PeopleComponent } from './components/people/people.component';
 import { LeaderboardComponent } from './components/leaderboard/leaderboard.component';
 import { ComingSoonComponent } from './components/movies-page/coming-soon/coming-soon.component';
 import { TrendingComponent } from './components/movies-page/trending/trending.component';
+import { AvatarHeaderComponent } from './core-components/header/avatar-header/avatar-header.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TrendingComponent } from './components/movies-page/trending/trending.co
     LeaderboardComponent,
     ComingSoonComponent,
     TrendingComponent,
+    AvatarHeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
